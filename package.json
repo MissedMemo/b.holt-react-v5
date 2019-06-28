@@ -1,0 +1,15 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MissedMemo/b.holt-react-v5.git",
+  "author": "AndyL <missedmemo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"hello\" && exit 1",
+    "format": "prettier \"2*/src/**/*.{html,js}\" --write"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
