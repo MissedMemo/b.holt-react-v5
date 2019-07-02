@@ -5,11 +5,12 @@
   "repository": "https://github.com/MissedMemo/b.holt-react-v5.git",
   "author": "AndyL <missedmemo@gmail.com>",
   "license": "MIT",
+  "config": { "dir": "./3*/src" },
   "scripts": {
-    "dev": "parcel 2*/src/index.html",
+    "dev": "parcel $npm_package_config_dir/index.html",
     "test": "echo \"hello\" && exit 1",
-    "format": "prettier \"2*/src/**/*.{html,js}\" --write",
-    "lint": "eslint \"2*/src/**/*.{js,jsx}\" --quiet"
+    "format": "prettier \"$npm_package_config_dir/**/*.{html,js}\" --write",
+    "lint": "eslint \"$npm_package_config_dir/**/*.{js,jsx}\" --quiet"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
