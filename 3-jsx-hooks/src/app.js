@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { Pet } from "./pet";
+import { Pet } from "./pet.jsx";
 
 const App = () => (
   <div>
