@@ -1,11 +1,9 @@
-import { createElement } from "react";
+import React from "react";
 
-export const Pet = ({ name, animal, breed }) => {
-  return createElement(
-    "div",
-    {},
-    createElement("h1", {}, name),
-    createElement("h2", {}, animal),
-    createElement("h2", {}, breed)
-  );
-};
+export const Pet = ({ name, animal, breed }) => (
+  <div>
+    <h1>{name}</h1>
+    <h2>{animal}</h2>
+    <h2>{breed}</h2>
+  </div>
+);
