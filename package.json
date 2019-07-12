@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "parcel $npm_package_config_dir/index.html",
+    "// COMMENT-1": "delete 'cache' & 'dist' folders when switching between dev and mock builds!",
     "dev:mock": "cross-env PET_MOCK=mock yarn dev",
     "test": "echo \"hello\" && exit 1",
     "format": "prettier \"$npm_package_config_dir/**/*.{html,js}\" --write",
