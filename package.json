@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "parcel $npm_package_config_dir/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock yarn dev",
     "test": "echo \"hello\" && exit 1",
     "format": "prettier \"$npm_package_config_dir/**/*.{html,js}\" --write",
     "lint": "eslint \"$npm_package_config_dir/**/*.{js,jsx}\" --quiet"
@@ -27,6 +28,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "^10.0.2",
+    "cross-env": "^5.2.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
