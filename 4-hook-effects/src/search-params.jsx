@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useDropDown from "./useDropDown.jsx";
+import Results from "./results.jsx";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 
 const SearchParams = () => {
@@ -49,6 +50,7 @@ const SearchParams = () => {
         <BreedDropDown />
         <button>Submit</button>
       </form>
+      <Results pets={pets} />
     </div>
   );
 };
