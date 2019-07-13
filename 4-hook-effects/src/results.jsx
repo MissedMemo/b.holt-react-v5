@@ -4,7 +4,21 @@ import Pet from "./pet.jsx";
 const Results = ({ pets }) => {
   return (
     <div className="search">
-      {pets.length === 0 ? <h1>No Pets Found</h1> : <h1>Pets FOUND!</h1>}
+      {pets.length === 0 ? (
+        <h1>No Pets Found</h1>
+      ) : (
+        pets.map(pet => (
+          <Pet
+            animal={pet.type}
+            key={pet.id}
+            id={pet.id}
+            name={pet.name}
+            breed={pet.breeds.primary}
+            media={pet.photos}
+            location={`${pet.contact.address.city}, ${pet.contact.address.state}`}
+          />
+        ))
+      )}
     </div>
   );
 };
