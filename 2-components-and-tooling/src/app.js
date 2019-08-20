@@ -4,8 +4,8 @@ import Pet from "./pet";
 
 const App = () => (
   <div>
-    <a className="logo" />
-    <h1>Let's adopt a pet!</h1>
+    <div className="logo" />
+    <h1>Let&apos;s adopt a pet!</h1>
     <Pet name="Fido" animal="dog" breed="Pomeranian" />
     <Pet name="Fluffy" animal="cat" breed="Siamese" />
     <Pet name="Eduardo" animal="bird" breed="Parrot" />
