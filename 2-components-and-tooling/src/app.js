@@ -2,25 +2,14 @@ import React from "react";
 import { render } from "react-dom";
 import Pet from "./pet";
 
-const App = () =>
-  React.createElement("div", {}, [
-    React.createElement("a", { class: "logo" }),
-    React.createElement("h1", {}, "Let's adopt a cute pet..."),
-    React.createElement(Pet, {
-      name: "Fido",
-      animal: "dog",
-      breed: "Pomeranian"
-    }),
-    React.createElement(Pet, {
-      name: "Fluff",
-      animal: "cat",
-      breed: "Siamese"
-    }),
-    React.createElement(Pet, {
-      name: "Squawk",
-      animal: "bird",
-      breed: "Parrot"
-    })
-  ]);
+const App = () => (
+  <div>
+    <a className="logo" />
+    <h1>Let's adopt a pet!</h1>
+    <Pet name="Fido" animal="dog" breed="Pomeranian" />
+    <Pet name="Fluffy" animal="cat" breed="Siamese" />
+    <Pet name="Eduardo" animal="bird" breed="Parrot" />
+  </div>
+);
 
-render(React.createElement(App), document.getElementById("root"));
+render(<App />, document.getElementById("root"));
