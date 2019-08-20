@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "format": "prettier \"2*/src/**/*.{html,js}\" --write"
+    "format": "prettier \"2*/src/**/*.{html,js}\" --write",
+    "lint": "eslint \"2*/src/**/*.{js,jsx}\" --quiet"
   },
   "devDependencies": {
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
     "prettier": "^1.18.2"
   }
 }
