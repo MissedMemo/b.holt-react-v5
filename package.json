@@ -1,8 +1,11 @@
 {
+  "config": {
+    "dir": "./3*/src"
+  },
   "scripts": {
-    "build-dev": "parcel 2*/src/index.html",
-    "format": "prettier \"2*/src/**/*.{html,js}\" --write",
-    "lint": "eslint \"2*/src/**/*.{js,jsx}\" --quiet"
+    "build-dev": "parcel $npm_package_config_dir/index.html",
+    "format": "prettier \"$npm_package_config_dir/**/*.{html,js}\" --write",
+    "lint": "eslint \"$npm_package_config_dir/**/*.{js,jsx}\" --quiet"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
