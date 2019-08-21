@@ -12,8 +12,9 @@ const SearchParams = () => {
     setBreeds([]);
     setBreed("");
 
-    pet.breeds(animal).then(({ breeds }) => {
-      const breedStrings = breeds.map(({ name }) => name);
+    // note 'breeds' rename to differentiate from useState variable
+    pet.breeds(animal).then(({ breeds: apiBreeds }) => {
+      const breedStrings = apiBreeds.map(({ name }) => name);
       setBreeds(breedStrings);
     }, console.error);
   }, [animal, setBreed, setBreeds]);
