@@ -1,6 +1,6 @@
 {
   "config": {
-    "dir": "./5*/src"
+    "dir": "./6*/src"
   },
   "scripts": {
     "build-dev": "parcel $npm_package_config_dir/index.html",
