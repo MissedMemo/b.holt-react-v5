@@ -42,6 +42,11 @@ body {
   margin-bottom: 25px;
 }
 
+.error-boundary {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .pet {
   width: 100%;
   height: 130px;
