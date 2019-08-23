@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import pet from "@frontendmasters/pet";
+import Carousel from "./carousel";
 
 class Details extends Component {
   state = {
@@ -30,6 +31,7 @@ class Details extends Component {
     return (
       <div className="details">
         <div>
+          <Carousel media={media} />
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
           <button>Adopt {name}</button>
