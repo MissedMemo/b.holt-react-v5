@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import pet from "@frontendmasters/pet";
 import Carousel from "./carousel";
 import ErrorBoundary from "./error-boundary";
+import ThemeContext from "./theme-context";
 
 class Details extends Component {
   state = {
@@ -37,7 +38,12 @@ class Details extends Component {
           <Carousel media={media} />
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
-          <button>Adopt {name}</button>
+          <ThemeContext.Consumer>
+            {([theme]) => (
+              // note array DESTRUCTURING (pulls out ThemeContext[0])
+              <button style={{ backgroundColor: theme }}>Adopt {name}</button>
+            )}
+          </ThemeContext.Consumer>
           <p>{description}</p>
         </div>
       </div>
